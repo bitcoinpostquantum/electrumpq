@@ -1,0 +1,12 @@
+{
+    "electrumx1.testnet.bitcoinpq.org": {
+        "pruning": "-",
+        "s": "51011",
+        "version": "1.2"
+    },
+    "electrumx2.testnet.bitcoinpq.org": {
+        "pruning": "-",
+        "s": "51011",
+        "version": "1.2"
+    }
+}

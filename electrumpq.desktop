@@ -1,0 +1,21 @@
+# If you want ElectrumPQ to appear in a Linux app launcher ("start menu"), install this by doing:
+# sudo desktop-file-install electrumpq.desktop
+
+[Desktop Entry]
+Comment=Lightweight BitcoinPQ Client
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\" electrumpq"
+GenericName[en_US]=BitcoinPQ Wallet
+GenericName=BitcoinPQ Wallet
+Icon=electrumpq
+Name[en_US]=Electrum BitcoinPQ Wallet
+Name=Electrum BitcoinPQ Wallet
+Categories=Finance;Network;
+StartupNotify=false
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/bitcoinpq;
+Actions=Testnet;
+
+[Desktop Action Testnet]
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\" electrumpq --testnet"
+Name=Testnet mode

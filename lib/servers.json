@@ -1,0 +1,14 @@
+{
+    "electrumx1.mainnet.bitcoinpq.org": {
+        "pruning": "-",
+        "s": "50012",
+        "t": "50011",
+        "version": "1.2"
+    },
+    "electrumx2.mainnet.bitcoinpq.org": {
+        "pruning": "-",
+        "s": "50012",
+        "t": "50011",
+        "version": "1.2"
+    }
+}

@@ -1,0 +1,3 @@
+electrumpq
+electrumpq_gui
+electrumpq_plugins

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ElectrumPQ
+Version: 4.0.0
+Summary: Lightweight Bitcoin-PQ Wallet
+Home-page: https://github.com/bitcoinpostquantum/electrum-bpq
+Author: Thomas Voegtlin
+Author-email: thomasv@electrum.org
+License: MIT Licence
+Description: Lightweight Bitcoin Wallet
+Platform: UNKNOWN
+Provides-Extra: full
