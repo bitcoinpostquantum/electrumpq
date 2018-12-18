@@ -229,6 +229,10 @@ class Blockchain(util.PrintError):
         _hash = hash_header(header)
         if prev_hash != header.get('prev_block_hash'):
             raise Exception("prev hash mismatch: %s vs %s" % (prev_hash, header.get('prev_block_hash')))
+
+        #TODO: fix BPQ target
+        return
+        
         if constants.net.TESTNET:
             return
         bits = self.target_to_bits(target)
@@ -376,6 +380,10 @@ class Blockchain(util.PrintError):
             return hash_header(self.read_header(height))
 
     def get_target(self, index):
+
+        #TODO: fix BPQ target
+        return
+
         # compute target from chunk x, used in chunk x+1
         if constants.net.TESTNET:
             return 0
