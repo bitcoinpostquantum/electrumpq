@@ -1564,9 +1564,13 @@ class Abstract_Wallet(PrintError):
                 key_type, next_subkey, max_subkeys = k.get_key_info(pubkey)
                 keypairs[x_pubkey] = (None, key_type, next_subkey)
 
-            if any(warn_sign(sig_count, next_subkey, max_subkeys, get_reserved(k))
-                   for k, (sig_count, next_subkey, max_subkeys) in tx.get_subkeys_using(keypairs).items()):
-                return True
+            try:
+                if any(warn_sign(sig_count, next_subkey, max_subkeys, get_reserved(k))
+                    for k, (sig_count, next_subkey, max_subkeys) in tx.get_subkeys_using(keypairs).items()):
+                    return True
+
+            except KeyError as e:
+                pass
 
         return False
 
