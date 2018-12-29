@@ -540,7 +540,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
 
         help_menu = menubar.addMenu(_("&Help"))
         help_menu.addAction(_("&About"), self.show_about)
-        help_menu.addAction(_("&Official website"), lambda: webbrowser.open("https://github.com/bitcoinpostquantum/electrum-bpq"))
+        help_menu.addAction(_("&Official website"), lambda: webbrowser.open("https://github.com/bitcoinpostquantum/electrumpq"))
         help_menu.addSeparator()
         #help_menu.addAction(_("&Documentation"), lambda: webbrowser.open("http://docs.electrum.org/")).setShortcut(QKeySequence.HelpContents)
         help_menu.addAction(_("&Report Bug"), self.show_report_bug)
@@ -566,8 +566,8 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
     def show_report_bug(self):
         msg = ' '.join([
             _("Please report any bugs as issues on github:<br/>"),
-            "<a href=\"https://github.com/bitcoinpostquantum/electrum-bpq/issues\">https://github.com/bitcoinpostquantum/electrum-bpq/issues</a><br/><br/>",
-            _("Before reporting a bug, upgrade to the most recent version of Electrum (latest release or git HEAD), and include the version number in your report."),
+            "<a href=\"https://github.com/bitcoinpostquantum/electrumpq/issues\">https://github.com/bitcoinpostquantum/electrumpq/issues</a><br/><br/>",
+            _("Before reporting a bug, upgrade to the most recent version of ElectrumPQ (latest release or git HEAD), and include the version number in your report."),
             _("Try to explain not only what the bug is, but how it occurs.")
          ])
         self.show_message(msg, title="ElectrumPQ - " + _("Reporting Bugs"))
